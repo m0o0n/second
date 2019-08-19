@@ -1,0 +1,789 @@
+body, html
+{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2050px;
+}
+
+.head
+{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    background: rgba(51, 51, 51, 1);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.firstHP
+{
+    position: relative;
+    color: #999999;
+    cursor: pointer;
+}
+
+
+.secondHP
+{
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.secondHP p
+{
+    position: relative;
+    display: block;
+    padding: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+}
+
+.firstHP_params
+{
+    display: none;
+    position: absolute;
+    top:  45px;
+    left: 65px;
+    z-index: 200;
+    color: black;
+}
+
+.PH3 i 
+{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    line-height: 45px;
+    color: white;
+    margin-right:15px;
+}
+
+.active
+{
+    position: relative;
+    margin: 0;
+    color: white;
+    line-height: 45px;
+    background: rgba(0, 200, 200, 1);
+    height: 100%;
+}
+
+
+.wrapper 
+{
+    position: relative;
+    width: 100%;
+    height: 920px;
+    background: rgba(248, 248, 248, 1);
+    
+}
+
+
+.logo
+{
+    position: relative;
+    display: flex;
+    top: -750px;
+    justify-content: space-around;
+    font-size: 450px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:  rgba(87, 81, 83, 1);
+}
+
+.wrapper img
+{
+    position: relative;
+    min-width: 920px;
+    max-height: 920px;
+    left: 6%;
+}
+
+
+.PH1::after
+{
+    content: '';
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: black;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.PH1::after:hover
+{
+    content: '';
+    display: block;
+    opacity: 0.5;
+}
+
+.wrapp_menu
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 45px;
+    right: 6%;
+    width: 43%;
+    
+}
+
+.wrapp_menu div
+{
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.wrapp_menu div:hover
+{
+    transition: .3s;
+    color:rgba(0, 200, 200, 1);
+}
+
+
+.wrapp_menu div:hover
+{
+    cursor: pointer;
+}
+
+.text_wrapper
+{
+    position: absolute;
+    display: flex;
+    top: 45px;
+    left: 6%;
+    width: auto;
+    letter-spacing: 0.5;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.text_wrapper a
+{
+    padding: 0 15px;
+}
+
+
+.wrapp_logo_button
+{
+    position: absolute;
+    background: transparent;
+    border: 2px solid black;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 340px;
+    height: 60px;
+    bottom: 180px;
+    right: 15%;
+    width: 16.63414634146341‬%;
+    cursor: pointer;
+}
+
+
+.wrapp_logo_button:hover
+{
+    transition: all .3s;
+    background: rgba(0, 200, 200, 1);
+    border: none;
+}
+
+
+.search_wrapp
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    width: 190px;
+    height: 30px;
+    border: 1px solid rgb(231, 231, 231);
+    top: -8px;
+}
+
+.search_wrapp input
+{
+    
+    outline: none;
+    border: none;
+    background: transparent;
+    height: 25px;
+    line-height: 30px;
+    position: absolute;
+    width: 85%;
+}
+
+
+.search_wrapp i
+{
+    position: absolute;
+    right: 10px;
+}
+
+.space
+{
+    position: relative;
+    width: 100%;
+    height: 62px;
+}
+
+.content
+{
+    position: relative;
+    width: 86%;
+    max-width: 2050px;
+    margin: 0 auto;
+    border-top: 1px solid rgb(238, 238, 238);
+    z-index: 400;
+}
+
+
+.content_menu
+{
+    position: relative;
+    height: 126px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    max-width: 2050px;
+}
+
+.content_menu div
+{
+    position: relative;
+/*    padding: 0 55px;*/
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.content_menu div:hover
+{
+    transition: all .4s;
+    color: rgba(0, 200, 200, 1);
+}
+
+
+.product_container
+{
+    position: relative;
+    width: 86%;
+    flex-wrap: wrap;
+    max-width: 1776px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+
+.product_container > div
+{
+    
+    margin: 10px;
+}
+
+
+.product_container > div:hover .pc_share
+{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.pc_hover_icon
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pc_hover_icon i
+{
+    color: white;
+    font-size: 18px;
+}
+
+.pc_hover_icon div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background: grey;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.pc_hover_icon div:hover
+{
+    background: rgba(0, 200, 200, 1);
+    transition: .4s;
+    
+}
+
+
+.product_container div img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.pc1, .pc2, .pc3, .pc4, .pc5, .pc6 
+{
+   position: relative;
+}
+
+
+.pc1
+{
+   
+    height: 495px;
+    width: 23%;
+    flex-grow: 1;
+}
+
+.pc2
+{
+    
+    height: 495px;
+    width: 23%;
+    flex-grow: 1;
+}
+
+.pc3
+{
+    height: 700px;
+    width: 48%;
+    flex-grow: 2;
+}
+
+.pc4
+{
+    height: 700px;
+    width: 48%;
+    top: -205px;
+    flex-grow: 2;
+}
+
+.pc5
+{
+   height: 495px;
+    width: 23%;
+    flex-grow: 1;
+}
+
+.pc6
+{
+    height: 495px;
+    width: 23%;
+    flex-grow: 1;
+}
+
+
+.pc_share
+{
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+    background: rgb(255, 255, 255);
+    bottom: -120px;
+    left: 0;
+    -webkit-box-shadow: 5px 5px 18px 1.5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 18px 1.5px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 18px 1.5px rgba(0,0,0,0.2);
+    z-index: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sa_pc_share
+{
+    color: rgb(114, 114, 114);
+}
+
+.sa_pc_share
+{
+    color: rgb(141, 140, 140);
+}
+
+.active_pc
+{
+ 
+    -webkit-box-shadow: 5px 5px 18px 1.5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 5px 5px 18px 1.5px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 18px 1.5px rgba(0,0,0,0.2);
+}
+
+.info
+{
+    position: absolute;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    z-index: 700;
+    margin: 15px;
+    letter-spacing: 0.08em;
+    color: rgb(154, 154, 154);
+}
+
+.pc_footer_space
+{
+    position: relative;
+    border-top: 1px solid rgb(238, 238, 238);
+    height: 60px;
+}
+
+
+
+.looks
+{
+    position: relative;
+    height: 520px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 125px;
+}
+
+.looks > div
+{
+    position: relative;
+    width: 32%;
+    background: rgb(248, 248, 248);
+    display: flex;
+}
+
+.lsl_img 
+{
+    position: relative;
+    width: 50%;
+    height: 92%;
+    left: 9%;
+    margin-bottom: 0;
+}
+
+.lsl_img img
+{
+    position: absolute;
+    bottom: 0;
+    height: 92%;
+}
+
+.lsl_text
+{
+    position: relative;
+    width: 43%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 92%;
+    right: 30px;
+    
+}
+
+.lsl_text a
+{
+    position: relative;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(87, 81, 83);
+    line-height: 10px;
+    
+    
+}
+
+.lsl_text a h2
+{
+    direction: rtl;
+}
+
+.lsl_text a h4
+{
+    font-weight: 400;
+    margin-bottom: 15px;
+    direction: rtl;
+}
+
+
+.lsl_text p
+{
+    position: relative;
+    text-align: end;
+    width: 100%;
+    
+    
+    color: rgb(147, 147, 147);
+}
+
+
+.lsl_button
+{
+    position: relative;
+    background: transparent;
+    color: rgb(69, 70, 71);
+    height: 11%;
+    width: 54%;
+    text-align: center;
+    align-self: flex-end;
+    outline: none;
+    border: 2px solid rgb(115, 115, 115);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+}
+
+.lsl_button:hover
+{
+    background: rgba(0, 200, 200, 1);
+    color: white;
+    transition: all .4s;
+    border: none;
+}
+
+.float
+{
+    position: relative;
+    background: rgb(248, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 580px;
+}
+
+.float_content_container
+{
+    position: relative;
+    width: 1170px;
+    height: 81%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.float_txtcolm
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+.float_txtcolm div
+{
+    position: relative;
+    
+
+}
+
+.ftxt_1
+{
+    flex-grow: 1;
+}
+
+.ftxt_2
+{
+    flex-grow: 1;
+}
+
+.ftxt_3
+{
+    flex-grow: 1;
+}
+
+.ftxt_4
+{
+    flex-grow: 1;
+}
+
+.ftxt_5
+{
+    flex-grow: 1;
+}
+
+
+.float_txtcolm div p
+{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.float_txtcolm div a
+{
+    position: relative;
+/*    padding-bottom: 30px;*/
+    line-height: 30px;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.float_txtcolm div a:hover
+{
+    transition: .4s;
+    color: rgb(0, 200, 200);
+}
+.float_baners
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.float_baners div
+{
+    position: relative;
+    width: 48.75%;
+    height: 200px;
+}
+
+
+.left_flban
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left_flban_af
+{
+    color: white;
+    position: relative;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.left_flban_as
+{
+    color: white;
+    position: relative;
+    
+    font-size: 36px;
+}
+
+.right_flban
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 200, 200);
+    justify-content: space-around;
+}
+
+.right_flban div
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 36px;
+    color: white;
+}
+
+
+.right_flban div i
+{
+    cursor: pointer;
+}
+
+.right_flban div i:hover
+{
+    color: wheat;
+    transition: .4s all;
+}
+
+
+.copyright
+{
+    position: relative;
+    background: rgb(51, 51, 51);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.copyright div a
+{
+    padding: 0 14px;
+}
+
+
+/*The brand styles*/
+
+div.row.top_bar
+{
+    background: rgb(51, 51, 51);
+    height: 50px;
+    color: white;
+     line-height: 40px;
+    position: relative;
+    
+}
+
+
+.tpb_flex
+{
+    position: relative;
+    color: white;
+    padding: 0;
+    height: 100%;
+}
+
+
+a.btn.btn-info.tpb_cart
+{
+    position: relative;
+    margin: 0;
+    padding: 12px;
+}
+
+
+
+
+
