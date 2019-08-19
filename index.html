@@ -1,0 +1,412 @@
+<html>
+
+    <head>
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="libs/animate.css"> 
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!--        <script src="js/head.js"></script>-->
+    </head>
+    
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        
+        <div class="head">
+        
+            <div class="firstHP">
+                <p>Curency: <a id="cheskBOX">GPB </a> <i id="chesk_param" class="fas fa-chevron-down"></i> <!--Стрелка-->
+                    <script>
+                    
+                        chesk_param.onclick = function(){
+                           if(document.getElementById("firstHP_params").style.display == "none"){ 
+                               document.getElementById("firstHP_params").style.display = "block";
+                           } else {
+                               document.getElementById("firstHP_params").style.display = "none";
+                           }
+                        }
+                        
+                    </script>
+                </p>
+                <div class="firstHP_params" id="firstHP_params">
+                    <p class="wow fadeInDown" data-wow-duration="0.5s">PPH</p>
+                    <p class="wow fadeInDown" data-wow-duration="1s">BBQ</p>
+                    <p class="wow fadeInDown" data-wow-duration="1.5s">CPP</p>
+                </div>
+            </div>
+            
+            <div class="secondHP">
+                <p class="PH1">Register</p>
+                <p class="PH2">Sign in</p>
+                <p class="PH3 active"><i class="fas fa-shopping-cart"></i>Empty</p>
+            </div>
+            
+        </div>
+        
+        
+        <div class="wrapper">
+           <!--  <div class="back"></div>
+           <!-- <img src="img/photo.png"> -->\
+            <img src="img/photo.png">
+            <div class="logo">
+                <a>A</a>
+                <a>V</a>
+                <a>E</a>
+            </div>
+            
+            <div class="text_wrapper">
+            <a style="font-weight:1000;">AVENUE</a><a style="font-weight:400;">FASHION</a>
+            </div>
+            
+            <div class="wrapp_menu">
+                <div>MENS</div>
+                <div>WOMENS</div>
+                <div>THE BRAND</div>
+                <div>LOCAL STORIES</div>
+                <div>LOOK BOOK</div>
+                <div class="search_wrapp"><input type="text" placeholder="Search"><i class="fas fa-search"></i></div>
+            </div>
+            
+            <div class="wrapp_logo">
+                
+                <input type="button" class="wrapp_logo_button block" value="SHOP MEN'S COLLECTION">
+            
+            </div>
+            
+        </div>
+        
+        <div class="space"></div>
+        
+        <div class="content">
+            
+            <div class="content_menu">
+                
+                <div>POPULAR</div>
+                <div>NEW ARRIVALS</div>
+                <div>BEST SELLERS</div>
+                <div> SPECIAL OFFERS</div>
+                <div>COMMING SOON</div>
+                
+            </div>
+            
+            <div class="product_container" id="product_container">
+                
+                <div class="pc1 active_pc pc" id="pc">
+                    <a class="info">496$</a>
+                    <img src="img/photo.png">
+                    <div class="pc_share" id="pc_share">
+                        
+                        <a class="fa_pc_share">WOMENS BURNT ORANGE CASUAL TEE 29.99$</a>
+                        <a class="sa_pc_share">Classic casual t-shirt for women on the move 100% cotton</a>
+                        <div class="pc_hover_icon">
+                            
+                            <div><i class="fas fa-shopping-cart"></i></div>
+                            <div><i class="far fa-heart"></i></div>
+                            <div><i class="fas fa-compress-arrows-alt"></i></div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="pc2 pc" id="pc">
+                    <a class="info">496$</a>
+                    <img src="img/photo.png">
+                    <div class="pc_share" id="pc_share">
+                        
+                        <a class="fa_pc_share">WOMENS BURNT ORANGE CASUAL TEE 29.99$</a>
+                        <a class="sa_pc_share">Classic casual t-shirt for women on the move 100% cotton</a>
+                        <div class="pc_hover_icon">
+                            
+                            <div><i class="fas fa-shopping-cart"></i></div>
+                            <div><i class="far fa-heart"></i></div>
+                            <div><i class="fas fa-compress-arrows-alt"></i></div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="pc3 pc" id="pc">
+                    <a class="info">496$</a>
+                    <img src="img/photo.png">
+<!--                    Дополнительный блок к диву продукта-->
+                    <div class="pc_share" id="pc_share">
+                        
+                        <a class="fa_pc_share">WOMENS BURNT ORANGE CASUAL TEE 29.99$</a>
+                        <a class="sa_pc_share">Classic casual t-shirt for women on the move 100% cotton</a>
+                        <div class="pc_hover_icon">
+                            
+                            <div><i class="fas fa-shopping-cart"></i></div>
+                            <div><i class="far fa-heart"></i></div>
+                            <div><i class="fas fa-compress-arrows-alt"></i></div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="pc4 pc" id="pc">
+                    <a class="info">496$</a>
+                    <img src="img/photo.png">
+                    <div class="pc_share" id="pc_share">
+                        
+                        <a class="fa_pc_share">WOMENS BURNT ORANGE CASUAL TEE 29.99$</a>
+                        <a class="sa_pc_share">Classic casual t-shirt for women on the move 100% cotton</a>
+                        <div class="pc_hover_icon">
+                            
+                            <div><i class="fas fa-shopping-cart"></i></div>
+                            <div><i class="far fa-heart"></i></div>
+                            <div><i class="fas fa-compress-arrows-alt"></i></div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="pc5 pc" id="pc">
+                    <a class="info">496$</a>
+                    <img src="img/photo.png">
+                    <div class="pc_share" id="pc_share">
+                        
+                        <a class="fa_pc_share">WOMENS BURNT ORANGE CASUAL TEE 29.99$</a>
+                        <a class="sa_pc_share">Classic casual t-shirt for women on the move 100% cotton</a>
+                        <div class="pc_hover_icon">
+                            
+                            <div><i class="fas fa-shopping-cart"></i></div>
+                            <div><i class="far fa-heart"></i></div>
+                            <div><i class="fas fa-compress-arrows-alt"></i></div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class="pc6" id="pc">
+                    <a class="info">496$</a>
+                    <img src="img/photo.png" class="aa pc">
+                    <div class="pc_share" id="pc_share">
+                        
+                        <a class="fa_pc_share">WOMENS BURNT ORANGE CASUAL TEE 29.99$</a>
+                        <a class="sa_pc_share">Classic casual t-shirt for women on the move 100% cotton</a>
+                        <div class="pc_hover_icon">
+                            
+                            <div><i class="fas fa-shopping-cart"></i></div>
+                            <div><i class="far fa-heart"></i></div>
+                            <div><i class="fas fa-compress-arrows-alt"></i></div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+<!--                  <script src="js/head.js"></script>-->
+                </div>
+<!--
+    <script>
+        var content = document.getElementsByClassName("pc");
+        console.log(content);
+        content.onmouseover = function(event){
+            var t = event.target;
+            t.style.opacity = "0";
+            console.log(t.style.width);
+        }
+                </script>
+-->
+            </div>
+            
+            <div class="pc_footer_space"></div>
+            
+        
+        </div>
+        
+        <div class="looks">
+        
+        
+            <div class="look_sl">
+                <div class="lsl_img"><img src="img/man.png"></div>
+                <div class="lsl_text">
+                
+                    <a>
+                        <h2>MEN'S</h2>
+                        <h4>LOOKBOOK</h4>
+                    </a>
+                    <p>
+                       Lorem ipsum dolor sit amet eras 
+                        facilisis   
+                        consectetur 
+                        adipiscing elit lor, integer lorem 
+                        
+                        consecteur dignissim laciniqui.
+                        Elementum metus facilisis ut phasellu. 
+                    </p>
+                    <input type="button" value="VIEW NOW" class="lsl_button">
+                </div>
+                
+            </div>
+            <div class="look_sl">
+                
+                <div class="lsl_img"><img src="img/woman.png"></div>
+                <div class="lsl_text">
+                
+                    <a>
+                        <h2>WOMEN'S</h2>
+                        <h4>LOOKBOOK</h4>
+                    </a>
+                    <p>
+                       Lorem ipsum dolor sit amet eras 
+                        facilisis   
+                        consectetur 
+                        adipiscing elit lor, integer lorem 
+                        
+                        consecteur dignissim laciniqui.
+                        Elementum metus facilisis ut phasellu. 
+                    </p>
+                    <input type="button" value="VIEW NOW" class="lsl_button">
+                </div>
+                
+            </div>
+            
+            <div class="look_sl">
+                
+                <div class="lsl_img"><img src="img/you.png"></div>
+                <div class="lsl_text">
+                
+                    <a>
+                        <h2>YOUR</h2>
+                        <h4>LOOKBOOK</h4>
+                    </a>
+                    <p>
+                       Lorem ipsum dolor sit amet eras 
+                        facilisis   
+                        consectetur 
+                        adipiscing elit lor, integer lorem 
+                        
+                        consecteur dignissim laciniqui.
+                        Elementum metus facilisis ut phasellu. 
+                    </p>
+                    <input type="button" value="VIEW NOW" class="lsl_button">
+                </div>
+            
+            </div>
+            
+            
+        </div>
+        
+        <div class="float">
+            
+            <div class="float_content_container">
+                
+                <div class="float_txtcolm">
+                    
+                    <div class="ftxt_1">
+                        <p>INFORMATION</p>
+                        <a>The brand</a>
+                        <a>Local stores</a>
+                        <a>Customer service</a>
+                        <a>Privacy and cookies</a>
+                        <a>Site map</a>
+                    </div>
+                    
+                    <div class="ftxt_2">
+                        <p>WHY BUY FROM US</p>
+                        <a>Shipping & returns</a>
+                        <a>secure shopping</a>
+                        <a>Testimonials</a>
+                        <a>Award winning</a>
+                        <a>Ethical trading</a>
+                    </div>
+                    
+                    <div class="ftxt_3">
+                        <p>YOUR ACCOUNT</p>
+                        <a>Sing in</a>
+                        <a>Register</a>
+                        <a>View cart</a>
+                        <a>View your lookbook</a>
+                        <a>Track an order</a>
+                        <a>Update information</a>
+                    </div>
+                    
+                    <div class="ftxt_4">
+                        <p>LOOKBOOK</p>
+                        <a>Latest post</a>
+                        <a>Men's lookbook</a>
+                        <a>Women's lookbook</a>
+                        <a>Lookbooks RSS feed</a>
+                        <a>View your lookbook</a>
+                        <a>Delete your lookbook</a>
+                    </div>
+                    
+                    <div class="ftxt_5">
+                        <p>CONTACT DETAILS</p>
+                        <a>Head Office Avenue Fashion.</a>
+                        <a>180-182 Regent Street. London.</a>
+                        <a>Telephone: 0123-456-789</a>
+                        <a>Enail: support@yourwebsite.com</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="float_baners">
+                    
+                    <div class="left_flban">
+                        <a class="left_flban_af">AWARD WINNER</a>
+                        <a class="left_flban_as">FASHION AWARDS 2016</a>
+                    </div>
+                    
+                    <div class="right_flban">
+                        <div class="icons">
+					
+						    <i class="fab fa-instagram"></i>
+						    <i class="fab fa-twitter-square"></i>
+						    <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-facebook-f"></i>
+					    </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="copyright">
+                <div class="copyright_fd"><a>2016 Avenue fashion</a></div>
+                <div class="copyright_sd">
+                    <a>Design by Vladyslav Shtrikun</a>
+                    <a>Dev by somewebsite.com</a>
+                </div>
+            </div>
+       <script src="js/head.js"></script>
+       
+        
+        <script>
+              wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+              </script>
+        
+    </body>
+    
+</html>
